@@ -1,1 +1,1 @@
-# blockchain-intro
+# mini-blockchain
