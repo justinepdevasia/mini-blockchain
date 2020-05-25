@@ -13,7 +13,7 @@ proof = sha256(text.encode()).hexdigest()
 print(proof)
   
 # finding a proof that has 2 leading zeros
-while not str(proof[:2]) == "0"*difficulty:
+while not str(proof[:difficulty]) == "0"*difficulty:
 	nonce +=1
 	text = str(nonce)+str(new_transactions)
 	proof = sha256(text.encode()).hexdigest()
